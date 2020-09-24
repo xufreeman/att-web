@@ -1,6 +1,8 @@
 {
-    "name": "abc_web",
+    "name": "{{name}}",
     "version": "0.1.1",
+    "description":"{{description}}",
+    "author":"{{author}}",
     "private": true,
     "scripts": {
         "serve": "vue-cli-service serve",
