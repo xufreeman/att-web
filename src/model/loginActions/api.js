@@ -9,8 +9,7 @@
  */
 
 
-import  api from '../const'
-let url=api.Alice+'user'
+let url='user'
 export default {
   QUERY_LOGIN_EMAIL:url+'/login/email',//
   QUERY_LOGIN_MOBILE:url+'/login/mobile',//

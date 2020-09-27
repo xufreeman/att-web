@@ -4,8 +4,6 @@
  * @Author heyuze
  * @Date 2018-11-21
  */
-// import  api from '../const'
-// let url=api.Alice+''
 export default {
   QUERY_USER_INFOEDIT:'/user/infoEdit',//
   QUERY_MOBILE_CHANGE:'/user/mobile/change',//

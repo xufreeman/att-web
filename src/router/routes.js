@@ -4,20 +4,21 @@
  * @Author: heyuze
  * @Date: 2018-11-26 15:28:59
  * @Last Modified by: mikey.zhaopeng
- * @Last Modified time: 2020-09-23 18:12:26
+ * @Last Modified time: 2020-09-27 14:36:29
  */
 import login from './login'
+const Login = () => import(/* webpackChunkName: "LoginIndex" */ '../views/login/login.vue') 
 
 
 
 export default [
   {
     path: '/',
-    name: 'home',
-    component: Home,
-    meta: {
-      keepAlive: true // 需要被缓存
-    }
+    name: 'Login',
+    component: Login,
+    // meta: {
+    //   keepAlive: true // 需要被缓存
+    // }
   },
   ...login,
 ]

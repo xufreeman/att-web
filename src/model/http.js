@@ -10,7 +10,6 @@ import { clearCookie,getCookie, storage,clearProductMess } from '../assets/js/ut
 import axios from 'axios'
 import CryptoJS from "crypto-js";
 import qs from 'qs'
-import api from "./const"
 import router from "../router/router";
 axios.defaults.baseURL = process.env.VUE_APP_BASE_API_URL
 axios.defaults.headers.post['Content-Type'] = 'application/json;charset=utf-8'
@@ -194,7 +193,7 @@ function checkState(response){
   }else if(response.data.respCode === 522){
     Message.error(response.data.respMsg);
     setTimeout(() => {
-        window.location.href=api.returnUrl;
+        // window.location.href=api.returnUrl;
     }, 1500);
   }
 }
