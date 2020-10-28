@@ -7,9 +7,8 @@
  * @Last Modified time: 2020-09-27 14:36:29
  */
 import login from './login'
+import test from './test'
 const Login = () => import(/* webpackChunkName: "LoginIndex" */ '../views/login/login.vue') 
-
-
 
 export default [
   {
@@ -21,4 +20,5 @@ export default [
     // }
   },
   ...login,
+  ...test
 ]

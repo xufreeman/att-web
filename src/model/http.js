@@ -11,7 +11,8 @@ import axios from 'axios'
 import CryptoJS from "crypto-js";
 import qs from 'qs'
 import router from "../router/router";
-axios.defaults.baseURL = process.env.VUE_APP_BASE_API_URL
+axios.defaults.baseURL = '/dev-api'
+// axios.defaults.baseURL = process.env.VUE_APP_BASE_API_URL
 axios.defaults.headers.post['Content-Type'] = 'application/json;charset=utf-8'
 let headers= {}
 axios.defaults.crossDomain = true
@@ -63,6 +64,7 @@ function reLogin(status) {
 }
 
 const handleRequest = (request) => {
+  // console.log('请求有问题', request)
   return new Promise((resolve, reject) => {
     request.then(resp => {
       const data = resp.data

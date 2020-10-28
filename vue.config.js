@@ -57,11 +57,11 @@ module.exports = {
         secure: true,
         proxyTimeout: 10 * 60 * 1000,
         timeout: 10 * 60 * 1000,
-        // target: 'http://mapi.jiaao.ltd/exterminate-dalek',
+        target: 'http://mapi.jiaao.ltd/exterminate-dalek',
         // target: 'http://mapi.jiaao.ltd/alice',
         // target: 'http://192.168.1.19:7001', //任
         // target: 'http://192.168.1.121:17061', //熊超
-        target: 'http://192.168.1.14:7001', //大蒙
+        // target: 'http://192.168.1.14:7001', //大蒙
         // target: 'http://192.168.1.103:10068', //帅举
 
         // target: 'http://192.168.1.218:8080', //星宇
